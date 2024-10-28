@@ -11,6 +11,7 @@ The application offers two primary modes: Learning and Game.
 •	Learning Mode: The user is shown a word and its corresponding sign (via an image and text on the screen). The user must perform the gesture within a limited time frame. If successful, the system provides positive feedback, and the next word is presented. If unsuccessful, the user receives negative feedback before the next word is displayed.
 
 •	Game Mode: The computer randomly selects a word from the learned vocabulary and asks the user to demonstrate it. Like the learning mode, if the user successfully signs the word, they receive positive feedback; if not, negative feedback is given before moving to the next word.
+
 The user can navigate between the main screen and each of the modes by "pressing" dedicated gesture-based "buttons." A separate gesture allows the user to return to the main screen.
 
 The system uses a single camera (such as a webcam) to capture the user from the waist up, as well as the surrounding space, to sample frames of the required gestures.
