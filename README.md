@@ -22,8 +22,11 @@ We built our dataset by capturing images of different people performing our sele
 ## Algorithms and Models
 
 •	Haar Feature-based Cascade Classifier: This algorithm detects faces and returns the location of the top-left corner of the head if a face is detected.
+
 •	Harris Corner Detection: An operator for detecting corners, defined as points with high intensity variation in both horizontal and vertical directions. Corners are considered robust and unique features for reliably matching between different images.
+
 •	Histogram of Oriented Gradients (HOG): Extracts features from the images for classification.
+
 •	Logistic Regression: A supervised linear machine learning model used to classify labels. After extracting features with HOG, we trained a Logistic Regression model on eight labels. The model takes feature vectors and corresponding labels as inputs and returns probabilities for each class.
 
 ## Authors
