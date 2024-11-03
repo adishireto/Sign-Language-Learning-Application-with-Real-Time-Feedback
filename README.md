@@ -74,6 +74,36 @@ The confusion matrix reveals insights into specific gestures the model classifie
 ## Real-Time Adaptation and Thresholding
 For real-time application, the model incorporates an adaptive feedback mechanism. Predictions are made on a per-frame basis, and only when a gesture achieves a confidence threshold of 75% or higher across at least five consecutive frames does the system finalize its recognition. This approach enhances reliability by filtering out single-frame misclassifications and stabilizing gesture recognition in real-time conditions.
 
+
+# Instructions for Running the Code
+
+1. **Download Additional Files**:
+   - From Google Drive, download the following files into the same project folder:  
+     [Google Drive link](https://drive.google.com/drive/u/0/folders/1aJTRXs7Ymd-_TvvbfwagxM6ZoGZAnGEF)
+     - `adi_show_in_learn`
+     - `butooms_pic`
+     - `voice`
+     - `LogisticRegression_12_(16, 16)_(4, 4).pkl`
+
+2. **Add Code File**:
+   - Place the Python code file `Sign_Language_Recognition_App.py` in the main project folder.
+
+3. **Open Command Prompt or Terminal**:
+   - Navigate to the project directory:
+     ```bash
+     cd path/to/your/project
+     ```
+
+4. **Run the Application**:
+   - Execute the following command:
+     ```bash
+     python Sign_Language_Recognition_App.py
+     ```
+
+5. **Optimal Viewing**:
+   - For the best experience, open the interface on a large computer screen to view figures and components clearly.
+
+
 # Authors
 
 - [@adishireto](https://www.github.com/adishireto)
