@@ -4,15 +4,31 @@ This application is designed for learning sign language using real-time feedback
 # Project Overview
 We developed an interactive application to facilitate learning Israeli Sign Language. Sign language plays an important role in integrating the deaf community into society, and knowing a basic vocabulary can be beneficial in various scenarios. This system is designed to recognize hand gestures the user performs and to determine whether they correspond to a given word in sign language, using exclusively image processing and machine learning techniques rather than deep learning. The application handles a wide range of vocabulary, user demographics, skin tones, body sizes, clothing types, and different environments.
 
+![example of the system.](assets/vocabulary.png)
+
+*Figure 1: The Israeli Sign Language vocabulary for this App.*
+
 ## Features
 
 The application offers two primary modes: Learning and Game.
 
 •	Learning Mode: The user is shown a word and its corresponding sign (via an image and text on the screen). The user must perform the gesture within a limited time frame. If successful, the system provides positive feedback, and the next word is presented. If unsuccessful, the user receives negative feedback before the next word is displayed.
 
+![example of the system.](assets/learn_mode.png)
+
+*Figure 2: Learning Mode.*
+
 •	Game Mode: The computer randomly selects a word from the learned vocabulary and asks the user to demonstrate it. Like the learning mode, if the user successfully signs the word, they receive positive feedback; if not, negative feedback is given before moving to the next word.
 
+![example of the system.](assets/game_mode.png)
+
+*Figure 3: Game Mode.*
+
 • Gesture-Based Navigation: The user can navigate between the main screen and each of the modes by "pressing" dedicated gesture-based "buttons". A separate gesture allows the user to return to the main screen.
+
+![example of the system.](assets/Gesture_Based_Navigation.png)
+
+*Figure 4: Gesture-Based Navigation.*
 
 The system uses a single camera (such as a webcam) to capture the user from the waist up, as well as the surrounding space, to sample frames of the required gestures.
 
@@ -28,6 +44,10 @@ We built our dataset by capturing images of different people performing our sele
 •	Histogram of Oriented Gradients (HOG): Extracts features from the images for classification.
 
 •	Logistic Regression: A supervised linear machine learning model used to classify labels. After extracting features with HOG, we trained a Logistic Regression model on eight labels. The model takes feature vectors and corresponding labels as inputs and returns probabilities for each class.
+
+![example of the system.](assets/intermediate_results.png)
+
+*Figure 5: Intermediate Results.*
 
 ## Model Performance
 The primary classification model for this project is a Logistic Regression model, chosen for its simplicity, efficiency, and suitability for multi-class classification tasks. This model was trained on feature vectors derived from the Histogram of Oriented Gradients (HOG), which captures essential edge and texture information necessary for distinguishing between different hand gestures. 
@@ -47,11 +67,14 @@ The confusion matrix reveals insights into specific gestures the model classifie
 
 • Challenges with Similar Gestures: Gestures with similar hand orientations, such as break and home, occasionally led to misclassifications due to overlapping HOG features. These overlaps were further minimized through post-processing steps, including averaging prediction confidence across multiple frames.
 
+![example of the system.](assets/classification.png)
+
+*Figure 5: Classification Confusion Matrix Analysis.*
+
 ## Real-Time Adaptation and Thresholding
 For real-time application, the model incorporates an adaptive feedback mechanism. Predictions are made on a per-frame basis, and only when a gesture achieves a confidence threshold of 75% or higher across at least five consecutive frames does the system finalize its recognition. This approach enhances reliability by filtering out single-frame misclassifications and stabilizing gesture recognition in real-time conditions.
 
-![example of the system.](assets/example_of_the_system.png)
-## Authors
+# Authors
 
 - [@adishireto](https://www.github.com/adishireto)
 - [@RachelBonen](https://www.github.com/RachelBonen)
