@@ -1,4 +1,4 @@
-# Sign-Language-Learning-Application-with-Real-Time-Feedback
+# Sign Language Learning Application with Real Time Feedback
 
 This application is designed for learning sign language using real-time feedback. The user stands in the center of the camera's view, and the entire interface operates through hand gestures, allowing users to switch between different modes without physical buttons. The application is built in Python, utilizing OpenCV and scikit-learn libraries.
 # Project Overview
