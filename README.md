@@ -69,7 +69,7 @@ The confusion matrix reveals insights into specific gestures the model classifie
 
 ![example of the system.](assets/classification.png)
 
-*Figure 5: Classification Confusion Matrix Analysis.*
+*Figure 6: Classification Confusion Matrix Analysis.*
 
 ## Real-Time Adaptation and Thresholding
 For real-time application, the model incorporates an adaptive feedback mechanism. Predictions are made on a per-frame basis, and only when a gesture achieves a confidence threshold of 75% or higher across at least five consecutive frames does the system finalize its recognition. This approach enhances reliability by filtering out single-frame misclassifications and stabilizing gesture recognition in real-time conditions.
