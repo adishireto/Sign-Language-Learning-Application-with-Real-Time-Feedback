@@ -102,8 +102,11 @@ For real-time application, the model incorporates an adaptive feedback mechanism
 
 5. **Optimal Viewing**:
    - For the best experience, open the interface on a large computer screen to view figures and components clearly.
-
-
+  
+# Project Demo
+Here's a short video demonstrating the key features and functionality of the Sign Language Recognition System:
+[Google Drive link](https://drive.google.com/file/d/1CvZqblFeylOBJZkFIy9siwjkgf1KUa34/view?usp=drive_link):
+   - 'Sign_Language_Recognition_Demo.mp4'
 # Authors
 
 - [@adishireto](https://www.github.com/adishireto)
